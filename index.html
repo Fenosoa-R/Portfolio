@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fenosoa Ny Avo | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Saira:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>PORTFOLIO<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-subtitle">Étudiant en Automatisme & Mécatronique</p>
+      <h1 class="hero-title">
+        <span class="hero-name">FENOSOA</span>
+        <span class="typed-text" id="typed"><span class="cursor">|</span></span>
+      </h1>
+      <p class="hero-desc">
+        Passionné par la robotique et les systèmes intelligents,</br>je conçois des technologies alliant matériel et logiciel.
+      </p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Voir mes projets
+        </a>
+        <a href="assets/cv/cv.pdf" class="btn btn-outline" download>
+          <i class="fas fa-download"></i> Télécharger CV
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/fenosoa-ny-avo-randriamampionona-79b3913aa" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Fenosoa-R" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:fenosoaa.randria@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-ring">
+        <div class="photo-ring-inner">
+          <img src="assets/img/e.png" alt="Fenosoa Ny Avo" />
+        </div>
+        <div class="ring-decoration r1"></div>
+        <div class="ring-decoration r2"></div>
+        <div class="ring-decoration r3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH INTERESTS ========== -->
+  <section class="interests" id="interests">
+    <div class="container">
+      <p class="interests-label">Research Interests</p>
+      <h2 class="interests-title">Ce qui me <span class="red">passionne</span></h2>
+      <div class="interests-grid">
+
+        <div class="interest-card fade-in">
+          <div class="interest-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Robotique & Systèmes Autonomes</h3>
+          <p>Conception de bras robotiques, systèmes embarqués et robots autonomes capables d'interagir avec leur environnement.</p>
+          <div class="interest-tags">
+            <span>Arduino</span><span>ESP32</span><span>Servomoteurs</span>
+          </div>
+        </div>
+
+        <div class="interest-card fade-in">
+          <div class="interest-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3>Automatisation & IoT</h3>
+          <p>Développement de systèmes connectés et automatisés pour l'industrie et l'agriculture intelligente.</p>
+          <div class="interest-tags">
+            <span>IoT</span><span>Capteurs</span><span>Automatisme</span>
+          </div>
+        </div>
+
+        <div class="interest-card fade-in">
+          <div class="interest-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Machine Learning & Neural Networks</h3>
+          <p>Exploration des réseaux de neurones et du machine learning appliqués aux systèmes embarqués et à la vision artificielle.</p>
+          <div class="interest-tags">
+            <span>Python</span><span>OpenCV</span><span>Neural Networks</span>
+          </div>
+        </div>
+
+        <div class="interest-card fade-in">
+          <div class="interest-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <h3>Modélisation 3D & CAO</h3>
+          <p>Conception et modélisation de pièces mécaniques et de systèmes complets via des outils de CAO professionnels.</p>
+          <div class="interest-tags">
+            <span>SolidWorks</span><span>AutoCAD</span><span>Godot</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS + CTA ========== -->
+  <section class="section" style="padding: 0;">
+    <div class="container">
+
+      <!-- STATS -->
+      <div class="stats-grid" style="padding: 3rem 0;">
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Projets Réalisés</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Certificats</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Années d'études tech</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="6">0</span>
+          <span class="stat-label">Technologies maîtrisées</span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-box" style="padding: 1rem 2rem; margin-bottom: 2rem;">
+        <h2>Vous avez un projet en tête ?</h2>
+        <p>Je suis ouvert aux collaborations, stages et opportunités dans le domaine de la robotique, l'automatisation et l'IA.</p>
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Me contacter
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; 2026  · Designed & Developed by Fenosoa Ny Avo</p>
+    <div class="footer-links">
+      <a href="https://github.com/Fenosoa-R" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/fenosoa-ny-avo-randriamampionona-79b3913aa" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:fenosoaa.randria@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/261381426886" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

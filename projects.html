@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets | Fenosoa Ny Avo - Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Saira:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>PORTFOLIO<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top:6rem; padding-bottom:8.5rem;">
+    <div class="container">
+      <h2 class="section-title">Mes <span class="red">Projets</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card fade-in">
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <h3>Bras Robotique 6 DOF Intelligent</h3>
+          <p>Bras robotique avec caméra et IA pour le tri automatisé d'objets.</p>
+          <div class="project-tags">
+            <span class="tag-microcontroller">ESP32</span>
+            <span class="tag-software">IA</span>
+            <span class="tag-hardware">Robotique</span>
+          </div>
+          <a href="#project-1" class="btn btn-outline btn-sm">
+            <i class="fas fa-chevron-down"></i> Voir les détails
+          </a>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-icon"><i class="fas fa-helicopter"></i></div>
+          <h3>Drone Agricole Intelligent</h3>
+          <p>Drone avec IA pour la surveillance des plantations et l'analyse des cultures.</p>
+          <div class="project-tags">
+            <span class="tag-hardware">ESP32 CAM</span>
+            <span class="tag-software">IA</span>
+            <span class="tag-cad">CAO</span>
+          </div>
+          <a href="#project-2" class="btn btn-outline btn-sm">
+            <i class="fas fa-chevron-down"></i> Voir les détails
+          </a>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-icon"><i class="fas fa-fish"></i></div>
+          <h3>Système d'Aquaponie Automatisé</h3>
+          <p>Gestion automatique de l'élevage de poissons et des cultures via contrôle intelligent.</p>
+          <div class="project-tags">
+            <span class="tag-microcontroller">ESP32</span>
+            <span class="tag-hardware">IoT</span>
+            <span class="tag-software">Automatisme</span>
+          </div>
+          <a href="#project-3" class="btn btn-outline btn-sm">
+            <i class="fas fa-chevron-down"></i> Voir les détails
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DETAILS ========== -->
+  <section class="section" style="padding-top: 10rem;">
+    <div class="container">
+      <h2 class="section-title">Détails des <span class="red">Projets</span></h2>
+
+      <!-- ===== PROJET 1 : Bras Robotique ===== -->
+      <div class="project-detail fade-in" id="project-1">
+        <div class="detail-header">
+          <div class="detail-icon"><i class="fas fa-robot"></i></div>
+          <div class="detail-title">
+            <h3>Bras Robotique 6 DOF Intelligent</h3>
+            <p class="detail-date"><i class="fas fa-calendar-alt"></i> 2024 – En cours</p>
+          </div>
+        </div>
+
+        <div class="detail-content">
+
+          <!-- Texte -->
+          <div class="detail-text">
+            <h4><i class="fas fa-info-circle"></i> Description</h4>
+            <p>Bras robotique 6 axes capable de manipuler et trier des objets de différentes formes.
+               Intègre une caméra pour la vision par ordinateur et utilise l'IA pour l'apprentissage
+               et l'optimisation des mouvements.</p>
+
+            <h4><i class="fas fa-tools"></i> Technologies Utilisées</h4>
+            <div class="tech-stack">
+              <span class="tech-tag">ESP32 C++</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">SolidWorks</span>
+            </div>
+
+            <h4><i class="fas fa-chart-line"></i> Résultats</h4>
+            <p>Précision de tri de 94%. Le bras reconnaît et classe différents types d'objets en
+               temps réel. Présenté lors d'une démo industrielle avec retours positifs.</p>
+          </div>
+
+          <!-- Photos -->
+          <div>
+            <p class="detail-photos-label"><i class="fas fa-images"></i> Photos du prototype</p>
+
+              <div class="project-photos single">
+                <div class="photo-slot">
+                  <img src="assets/img/bras1.png" alt="Bras Robotique" />
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+      <hr style="border:none; border-top:1px solid var(--border); margin:3rem 0; opacity:0.4;">
+
+      <!-- ===== PROJET 2 : Drone ===== -->
+      <div class="project-detail fade-in" id="project-2">
+        <div class="detail-header">
+          <div class="detail-icon"><i class="fas fa-helicopter"></i></div>
+          <div class="detail-title">
+            <h3>Drone Agricole Intelligent</h3>
+            <p class="detail-date"><i class="fas fa-calendar-alt"></i> 2024 – En cours</p>
+          </div>
+        </div>
+
+        <div class="detail-content">
+
+          <div class="detail-text">
+            <h4><i class="fas fa-info-circle"></i> Description</h4>
+            <p>Drone agricole capable de surveiller les plantations et analyser la santé des cultures.
+               Intègre des capteurs multispectraux et l'IA pour prédire les maladies des plantes
+               et optimiser l'irrigation.</p>
+
+            <h4><i class="fas fa-tools"></i> Technologies Utilisées</h4>
+            <div class="tech-stack">
+              <span class="tech-tag">ESP32 CAM</span>
+              <span class="tech-tag">ROS</span>
+              <span class="tech-tag">Python OpenCV</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">AutoCAD</span>
+            </div>
+
+            <h4><i class="fas fa-chart-line"></i> Résultats</h4>
+            <p>Système de détection des maladies du riz basé sur l’analyse d’images.
+               Tests expérimentaux montrant jusqu’à 91% de précision de détection. 
+               Conçu pour contribuer à une meilleure gestion de l’irrigation.</p>
+          </div>
+
+          <div>
+            <p class="detail-photos-label"><i class="fas fa-images"></i> Photos du drone</p>
+
+            <div class="project-photos single">
+                <div class="photo-slot">
+                  <img src="assets/img/drone.png" alt="Drone Agricole" />
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <hr style="border:none; border-top:1px solid var(--border); margin:3rem 0; opacity:0.4;">
+
+      <!-- ===== PROJET 3 : Aquaponie ===== -->
+      <div class="project-detail fade-in" id="project-3">
+        <div class="detail-header">
+          <div class="detail-icon"><i class="fas fa-fish"></i></div>
+          <div class="detail-title">
+            <h3>Système d'Aquaponie Automatisé</h3>
+            <p class="detail-date"><i class="fas fa-calendar-alt"></i> 2023 – 2024</p>
+          </div>
+        </div>
+
+        <div class="detail-content">
+
+          <div class="detail-text">
+            <h4><i class="fas fa-info-circle"></i> Description</h4>
+            <p>Système complet combinant élevage de tilapia et culture de légumes (laitue, tomate).
+               Un contrôleur automatisé gère le pH, la température, l'oxygénation et l'alimentation
+               des poissons en temps réel.</p>
+
+            <h4><i class="fas fa-tools"></i> Technologies Utilisées</h4>
+            <div class="tech-stack">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">Capteurs IoT</span>
+              <span class="tech-tag">Électronique</span>
+              <span class="tech-tag">Mécanique</span>
+              <span class="tech-tag">Biologie</span>
+            </div>
+
+            <h4><i class="fas fa-chart-line"></i> Résultats</h4>
+            <p>Prototype d’aquaponie conçu et testé à petite échelle.
+               Validation du fonctionnement du cycle eau–plantes–poissons lors des démonstrations expérimentales. 
+                Projet pensé pour une application potentielle en agriculture urbaine à Madagascar.</p>
+          </div>
+
+          <div>
+            <p class="detail-photos-label"><i class="fas fa-images"></i> Photos du système</p>
+
+            <div class="project-photos single">
+                <div class="photo-slot">
+                  <img src="assets/img/aquaponie.png" alt="Aquaponie" />
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Vous avez un projet en tête ?</h2>
+        <p>Parlons de comment transformer votre idée en réalité</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="about.html" class="btn btn-primary">
+            <i class="fas fa-user"></i> En savoir plus sur moi
+          </a>
+          <a href="contact.html" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Me proposer un projet
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; 2026  · Designed & Developed by Fenosoa Ny Avo</p>
+    <div class="footer-links">
+      <a href="https://github.com/Fenosoa-R" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/fenosoa-ny-avo-randriamampionona-79b3913aa" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:fenosoaa.randria@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/261381426886" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

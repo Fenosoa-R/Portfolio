@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Fenosoa Ny Avo - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Saira:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>PORTFOLIO<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À Propos</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="education.html">Éducation</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section" id="contact" style="padding-top: 5rem; padding-bottom: 1.5rem;">
+    <div class="container">
+      <h2 class="section-title">Me <span class="red">Contacter</span></h2>
+      <div class="contact-grid">
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info" style="padding-top: 1rem;">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>fenosoaa.randria@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Téléphone</h4>
+              <p>+261 38 14 268 86</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Localisation</h4>
+              <p>Antananarivo, Madagascar</p>
+            </div>
+          </div>
+
+          <!-- ✅ Messages déplacés ici, sous Localisation -->
+          <p id="status-success" style="display:none; color:#2ecc71; font-family:var(--font-tech); font-size:0.85rem; margin-top:1.2rem;">
+            <i class="fas fa-check-circle"></i> Message envoyé !
+          </p>
+          <p id="status-error" style="display:none; color:var(--red); font-family:var(--font-tech); font-size:0.85rem; margin-top:1.2rem;">
+            <i class="fas fa-exclamation-circle"></i> Erreur. Réessayez ou écrivez-moi directement.
+          </p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form" id="contact-form">
+          <input type="text"   name="from_name"  placeholder="Votre nom"           required />
+          <input type="email"  name="from_email" placeholder="Votre email"          required />
+          <input type="hidden" name="time"        id="time-field" />
+          <textarea            name="message"     rows="5" placeholder="Votre message..." required></textarea>
+
+          <button type="submit" class="btn btn-primary" id="submit-btn">
+            <i class="fas fa-paper-plane"></i> Envoyer
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; 2026 · Designed & Developed by Fenosoa Ny Avo</p>
+    <div class="footer-links">
+      <a href="https://github.com/Fenosoa-R" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/fenosoa-ny-avo-randriamampionona-79b3913aa" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:fenosoaa.randria@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/261381426886" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
