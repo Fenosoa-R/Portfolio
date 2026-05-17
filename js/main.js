@@ -25,16 +25,26 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-hamburger?.addEventListener('click', () => {
+hamburger?.addEventListener('click', (e) => {
+  e.stopPropagation(); // Empêche la propagation
   hamburger.classList.toggle('active');
   navLinks.classList.toggle('open');
 });
 
+// Ferme le menu quand on clique sur un lien
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     hamburger?.classList.remove('active');
     navLinks?.classList.remove('open');
   });
+});
+
+// Ferme le menu quand on clique en dehors
+document.addEventListener('click', (e) => {
+  if (!navbar.contains(e.target)) {
+    hamburger?.classList.remove('active');
+    navLinks?.classList.remove('open');
+  }
 });
 
 // ========== 3. HERO SECTION - TYPED EFFECT ==========
@@ -93,6 +103,9 @@ createObserver(fadeEls, (entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
+}, { 
+  threshold: 0.1,        // ← réduit de 0.15 à 0.1 pour mobile
+  rootMargin: '0px 0px -50px 0px'  // ← déclenche un peu avant
 });
 
 // ========== 5. SKILL BARS ANIMATION ==========
@@ -103,7 +116,10 @@ createObserver(fills, (entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add('animated');
   });
-}, { threshold: 0.5 });
+}, { 
+  threshold: 0.1,       // ← réduit de 0.5 à 0.1 pour mobile
+  rootMargin: '0px 0px -30px 0px'
+});
 
 // ========== 6. NAVIGATION - ACTIVE STATE ==========
 
@@ -250,21 +266,6 @@ window.addEventListener('scroll', () => {
   document.documentElement.style.setProperty('--scroll-progress', scrollPercent + '%');
 });
 
-// ========== 10. SMOOTH SCROLL ANCHORS ==========
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      if (hamburger?.classList.contains('active')) {
-        hamburger.classList.remove('active');
-        navLinks?.classList.remove('open');
-      }
-    }
-  });
-});
 
 // ========== 11. LAZY LOADING IMAGES ==========
 
@@ -359,6 +360,7 @@ function initEducationAnimation() {
 
   eduItems.forEach(item => {
     item.addEventListener('mouseenter', () => moveBallTo(item));
+    item.addEventListener('touchstart', () => moveBallTo(item), { passive: true });
   });
 }
 
