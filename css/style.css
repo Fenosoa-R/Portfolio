@@ -2273,10 +2273,6 @@ body {
   font-size: 0.7rem;
   letter-spacing: 2px;  /* ← réduit l'espacement des lettres */
 }
-
-.br-desktop {
-  display: none;
-}
     
 }
 
